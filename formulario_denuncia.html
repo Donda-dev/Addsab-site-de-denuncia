@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Denuncia</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Denúncia de Maus-Tratos a Animais</h1>
+        <p>Preserve a vida e o bem-estar dos animais. Sua denúncia pode salvar uma vida</p>
+    </header>
+    <main>
+        <form action="#" method="POST" class="denuncia-form">
+            <section>
+                <h2>1. Informações do animal</h2>
+                <label for="especie">Espécie do Animal:</label>
+                <input type="text" id="especie" name="especie" required>
+
+                <label for="nome">Nome do Animal (se conhecido):</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="raça">Raça (se possível):</label>
+                <input type="text" name="raça" id="raça">
+
+                <label for="idade">Idade(aproximadamente):</label>
+                <input type="text" name="idade" id="idade">
+
+                <label for="descrição">descrição do Animal:</label>
+                <textarea id="descrição" name="descrição" rows="4" required></textarea> 
+            </section>
+            <section>
+                <h2>2. Detalhes do Caso</h2>
+                <label>Tipo de Maus-Tratos Observados:</label>
+                <div>
+                    <input type="checkbox" id="abandonado" name="Tipo" value="Abandono">
+                    <label for="abandonado">Abandono</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="negligencia" name="Tipo" value="Negligencia">
+                    <label for="negligencia">Negligencia</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="violencia" name="tipo" value="Violência Física">
+                    <label for="violencia">Violência Física</label>
+                </div>
+                <di>
+                <input type="checkbox" id="trabalho-forcado" name="tipo" value="Trabalho Forçado">
+                <label for="trabalho-forcado">Trabalho Forçado</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="alimentacao" name="tipo" value="Alimentação Inadequada">
+                    <label for="alimentacao">Alimentação Inadequada</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="outros" name="tipo" value="Outros">
+                    <label for="outros">Outros (Descreva abaixo)</label>
+                </div>
+                <label for="descricao-caso">Descrição Detalhada dos Maus-Tratos:</label>
+                <textarea id="descricao-caso" name="descricao-caso" rows="6" required></textarea>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
