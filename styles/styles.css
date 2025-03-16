@@ -83,3 +83,11 @@ footer {
     color: white;
     margin-top: 30px;
 }
+
+.reservado {
+    display: flex;
+    margin-left: 500px;
+    font-size: 12px;
+    height: 10px;
+    padding: 10px;
+}
